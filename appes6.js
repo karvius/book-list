@@ -97,7 +97,7 @@ class Store {
 }
 
 // DOM Load Event
-document.addEventListener('DOMContentLoaded', Store.displayBooks);
+document.addEventListener('DOMContentLoaded', Store.displayBooks());
 
 // Event listener for add book
 document.querySelector('#book-form').addEventListener('submit', function(e) {
@@ -126,7 +126,7 @@ document.querySelector('#book-form').addEventListener('submit', function(e) {
   e.preventDefault();
 });
 
-// Event listener for book
+// Event listener for delete book
 document.querySelector('#book-list').addEventListener('click', function(e) {
   // Instantiate UI
   const ui = new UI();
