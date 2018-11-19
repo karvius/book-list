@@ -1,3 +1,4 @@
+'use strict';
 // Book Contructor
 function Book(title, author, isbn) {
   this.title = title;
